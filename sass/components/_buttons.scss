@@ -1,0 +1,54 @@
+.btn {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 0.6rem;
+  padding: 1.2rem 3.2rem;
+  background-color: $color-white;
+  color: $color-very-dark-blue;
+  box-shadow: 0 0.2rem 0.4rem rgba($color: #bbbbbb, $alpha: 0.15);
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0.2rem 0.4rem rgba($color: #bbbbbb, $alpha: 0.7);
+  }
+
+  &__default {
+    box-shadow: 0 0.2rem 0.4rem rgba($color: #bbbbbb, $alpha: 0.7);
+    &:hover {
+      border: 2px solid $color-very-dark-blue;
+      background-color: transparent;
+      color: $color-very-dark-blue;
+    }
+  }
+
+  &__primary {
+    background-color: $color-soft-blue;
+    color: $color-white;
+
+    &:hover {
+      border: 2px solid $color-soft-blue;
+      background-color: transparent;
+      color: $color-soft-blue;
+    }
+  }
+
+  &__secondary {
+    background-color: $color-soft-red;
+    color: $color-white;
+
+    &:hover {
+      border: 2px solid $color-soft-red;
+      background-color: transparent;
+      color: $color-soft-red;
+    }
+  }
+
+  &__text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+}

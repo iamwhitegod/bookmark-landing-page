@@ -1,0 +1,18 @@
+.features {
+  grid-column: left-margin-start / right-margin-end;
+  grid-row: 3 / 4;
+  padding: 3.2rem 0 6.4rem;
+
+  &__caption {
+    text-align: center;
+
+    .heading {
+      margin-bottom: 1.6rem;
+    }
+
+    .desc {
+      max-width: 55rem;
+      margin: 0 auto;
+    }
+  }
+}

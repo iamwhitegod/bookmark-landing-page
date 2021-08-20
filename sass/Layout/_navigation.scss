@@ -1,0 +1,47 @@
+.nav {
+  grid-column: center-start / center-end;
+  grid-row: 1 / 2;
+
+  display: flex;
+  align-items: center;
+  padding: 3.2rem 0;
+
+  &__logo {
+    width: 18rem;
+
+    & > svg {
+      height: 3.2rem;
+    }
+  }
+
+  &__nav-menu {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    flex-grow: 1;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+    & > * {
+      &:not(:first-child) {
+        margin-left: 4.8rem;
+      }
+    }
+  }
+
+  &__btn {
+    margin-left: 4.8rem;
+  }
+
+  &__mobile-menu {
+    display: none;
+
+    & > svg {
+      height: 3.2rem;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/*
+  Font-type scaling
+*/
+
+// Base font size
+$base-font-size: 10px;
+$default-font-size: 1.6rem;
+
+// Headings font sizes
+$heading1-font-size: $default-font-size * 1.62 * 1.62 * 1.62;
+$heading2-font-size: $default-font-size * 1.62 * 1.62;
+$heading3-font-size: $default-font-size * 1.62;
+
+/*
+  Colors
+*/
+
+// Primary Colors
+$color-soft-blue: hsl(231, 69%, 60%);
+$color-soft-red: hsl(0, 94%, 66%);
+
+// Neutral Colors
+$color-white: hsl(255, 100%, 99%);
+$color-grayish-blue: hsl(229, 8%, 60%);
+$color-very-dark-blue: hsl(229, 31%, 21%);

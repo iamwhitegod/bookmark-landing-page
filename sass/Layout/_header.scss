@@ -1,0 +1,54 @@
+.header {
+  grid-column: left-margin-start / right-margin-end;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) repeat(2, minmax(min-content, 57rem)) minmax(
+      6rem,
+      1fr
+    );
+  padding: 6.4rem 0;
+
+  &__content {
+    grid-column: 2 / 3;
+    align-self: center;
+    margin-top: -6.4rem;
+
+    .heading {
+      margin-bottom: 1.6rem;
+    }
+
+    .desc {
+      margin-bottom: 3.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: 2.4rem;
+      }
+    }
+  }
+
+  &__illustration {
+    grid-column: 3 / -1;
+    position: relative;
+
+    img {
+      position: relative;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 110%;
+      height: 32rem;
+      background-color: $color-soft-blue;
+      border-radius: 30rem;
+      position: absolute;
+      right: -24rem;
+      bottom: -2.4rem;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-columns:
+    [left-margin-start] minmax(6rem, 1fr)
+    [left-margin-end center-start] 114rem [center-end right-margin-start] minmax(
+      6rem,
+      1fr
+    )
+    [right-margin-end];
+  grid-template-rows: repeat(7, min-content);
+}
